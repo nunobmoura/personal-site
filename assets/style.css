@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #F2F2F2;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+p, a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a {
+    color: #232323;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ------ header ------ */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2F2F2;
+    color: #232323;
+    z-index: 5;
+}
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+    opacity: 0.95;
+    z-index: 2;
+}
+
+.nm-icon {
+    padding-left: 8%;
+    fill: #232323;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px 10px 10px;
+}
+
+.header-container {
+    width: 84%;
+    position: absolute;
+    bottom: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.icons-container {
+    display: flex;
+    padding-top: 20px;
+}
+
+.icons-container li {
+    padding-right: 20px;
+}
+
+.icons-container svg {
+    display: flex;
+}
+
+header .dribbble-icon {
+    fill: #EA4C89;
+}
+
+header .behance-icon {
+    fill: #1769FF;
+}
+
+header .linkedin-icon {
+    fill: #007BB5;
+}
+
+.drag-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+/* ------ About me ------ */
+main {
+    width: 100vw;
+    background-color: #F2F2F2;
+    margin-bottom: 221px;
+}
+
+.bg-about-me {
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient(to top, rgba(5, 5, 5, 0.7) 15%, rgba(0, 0, 0, 0) 70%), url(Images/Nuno_Moura.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-me-container {
+    position: absolute;
+    width: 84%;
+    bottom: 8%;
+    left: 8%;
+}
+
+.scroll-icon {
+    display: none;
+}
+
+/* ------ Resume ------ */
+.career-container {
+    margin: 80px 8% 30px;
+    color: #232323;
+}
+
+.career-container li {
+    margin-top: 24px;
+}
+
+.line-break {
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    margin: 40px 0;
+    left: 4%;
+    right: 4%;
+    height: 6px;
+}
+
+.skills h3 {
+    margin-top: 24px;
+}
+
+.skills li {
+    margin-top: 0;
+}
+
+/* ------ Projects ------ */
+.projects {
+    padding-top: 50px;
+}
+
+.projects-container li {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.figure-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+figure {
+    position: relative;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.project-image {
+    width: 80vw;
+    height: 30vh;
+    object-fit: contain;
+}
+
+figcaption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.project-figcaption {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+.project-number {  /*REMOVER*/
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    font-weight: 200;
+    z-index: 1;
+}
+
+.project-description {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    z-index: 1;
+}
+
+.link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 8%;
+    bottom: 8%;
+}
+
+.projects-container svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    fill: white;
+}
+
+.projects-container li:nth-child(1) {
+    background-color: #FFB950;
+}
+
+.projects-container li:nth-child(2) {
+    background-color: #6CCD6B;
+}
+
+.projects-container li:nth-child(3) {
+    background-color: #0B3D91;
+}
+
+.projects-container li:nth-child(4) {
+    background-color: #2BA09C;
+}
+
+.projects-container li:nth-child(5) {
+    background-color: #fe8645;
+}
+
+.projects-container li:nth-child(6) {
+    background-color: #20ACE8;
+}
+
+/* ------ Footer ------ */
+footer {
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    bottom: 0;
+    background-color: #4A4A4A;
+    z-index: -1;
+}
+
+footer > * {
+    padding: 30px 8% 0;
+}
+
+footer:last-child {
+    padding-bottom: 40px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.6;
+}
+
+footer h4 {
+    font-size: 12px;
+}
+
+footer a {
+    color: #3A7CDF;
+}
+
+/* icons-container definido no header */
+
+footer .icons-container {
+    padding-top: 0;
+}
+
+.social-container .icons-container svg {
+    fill: white;
+}
+
+/* ------ Media Queries ------ */
+@media (min-width: 520px) and (max-width: 720px) {
+    main {
+        margin-bottom: 173px;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container > li {
+        flex-basis: 50%;
+    }
+
+    .flex-container > ul {
+        flex-basis: 50%;
+    }
+
+    .flex-container > div {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 720px) {
+    header, .navbar {
+        width: 40vw;
+    }
+
+    header {
+        position: fixed;
+        float: left;
+        box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+        padding: 10px 3vw 10px 10px;
+        opacity: 0.4;
+        transition: 0.2s ease;
+    }
+
+    nav a:hover {
+        color: #3A7CDF;
+        opacity: 1;
+    }
+
+    .header-container svg {
+        fill: black;
+        opacity: 0.4;
+        transition: 0.2s ease;
+    }
+
+    header .dribbble-icon:hover {
+        fill: #EA4C89;
+        opacity: 1;
+    }
+
+    header .behance-icon:hover {
+        fill: #1769FF;
+        opacity: 1;
+    }
+
+    header .linkedin-icon:hover {
+        fill: #007BB5;
+        opacity: 1;
+    }
+
+    .drag-icon {
+        display: none;
+    }
+
+    main, footer {
+        width: 60vw;
+        float: right;
+    }
+
+    .bg-about-me {
+        height: 100vh;
+        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.5) 15%, rgba(0, 0, 0, 0) 40%), url(Images/Nuno_Moura.png);
+    }
+
+    .about-me-container p {
+        max-width: 450px;
+        margin-right: 40px;
+    }
+
+    .scroll-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        fill: white;
+        opacity: 0.8;
+    }
+
+    .career-container {
+        margin: 80px 8%;
+    }
+
+    .project-image {
+        width: 35vw;
+        height: 35vh;
+    }
+
+    .projects {
+        padding-top: 0;
+    }
+
+    .project-figcaption {
+        width: 50%;
+    }
+
+    .projects-container svg {
+        fill: white;
+        opacity: 0.4;
+        transition: 0.2s ease;
+    }
+
+    .projects-container svg:hover {
+        opacity: 1;
+    }
+
+    footer .icons-container {
+        display: none;
+    }
+}
+
+@media (min-width: 930px) {
+    header, .navbar {
+        width: 35vw;
+    }
+
+    main, footer {
+        width: 65vw;
+    }
+
+    main {
+        margin-bottom: 173px;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-container > li {
+        flex-basis: 50%;
+    }
+
+    .flex-container > ul {
+        flex-basis: 50%;
+    }
+
+    .flex-container > div {
+        flex-basis: 50%;
+    }
+}
