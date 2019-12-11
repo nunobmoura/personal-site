@@ -54,7 +54,6 @@ header {
     height: 100vh;
     background-color: #F2F2F2;
     color: #232323;
-    z-index: 5;
 }
 
 .navbar {
@@ -74,10 +73,6 @@ header {
     fill: #232323;
 }
 
-nav {
-    display: flex;
-}
-
 nav a {
     display: inline-block;
     padding: 10px 20px 10px 10px;
@@ -88,7 +83,6 @@ nav a {
     position: absolute;
     bottom: 8%;
     margin-left: 8%;
-    margin-right: 8%;
 }
 
 .icons-container {
@@ -125,7 +119,6 @@ header .linkedin-icon {
 
 /* ------ About me ------ */
 main {
-    width: 100vw;
     background-color: #F2F2F2;
     margin-bottom: 232px;
 }
@@ -159,12 +152,11 @@ main {
 }
 
 .line-break {
+    height: 6px;
+    width: 100%;
     background-color: #D9D9D9;
     border-radius: 3px;
     margin: 40px 0;
-    left: 4%;
-    right: 4%;
-    height: 6px;
 }
 
 .skills h3 {
@@ -186,9 +178,6 @@ main {
 }
 
 .figure-container {
-    display: flex;
-    justify-content: center;
-    background-color: inherit;
     padding-top: 8%;
 }
 
@@ -202,11 +191,8 @@ figcaption {
 }
 
 .project-description { 
-    position: relative;
     padding-top: 8%;
     padding-left: 8%;
-    font-weight: 200;
-    z-index: 1;
 }
 
 .link {
@@ -252,7 +238,6 @@ figcaption {
 footer {
     position: fixed;
     width: 100vw;
-    right: 0;
     bottom: 0;
     background-color: #4A4A4A;
     z-index: -1;
@@ -417,6 +402,18 @@ footer .icons-container {
         height: 70vh;
     }
 
+    .project-description { 
+        position: relative;
+        font-weight: 200;
+        z-index: 1;
+    }
+
+    .figure-container {
+        display: flex;
+        justify-content: center;
+        background-color: inherit;
+    }
+
     .project-image {
         width: 45vw;
         height: 55vh;
@@ -467,6 +464,10 @@ footer .icons-container {
 
     .projects-container svg:hover {
         opacity: 1;
+    }
+    
+    footer {
+        right: 0;
     }
 
     .footer-description {
