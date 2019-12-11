@@ -177,6 +177,11 @@ main {
     width: 100%;
 }
 
+.project-description { 
+    padding-top: 8%;
+    padding-left: 8%;
+}
+
 .figure-container {
     padding-top: 8%;
 }
@@ -188,11 +193,6 @@ main {
 
 figcaption {
     padding: 8% 8% 12%;
-}
-
-.project-description { 
-    padding-top: 8%;
-    padding-left: 8%;
 }
 
 .link {
@@ -247,8 +247,8 @@ footer > * {
     padding: 30px 8% 0;
 }
 
-footer:last-child {
-    padding-bottom: 40px;
+footer a {
+    color: #3A7CDF;
 }
 
 .social-container {
@@ -267,25 +267,25 @@ footer:last-child {
     line-height: 18px;
 }
 
-footer a {
-    color: #3A7CDF;
-}
-
 /* icons-container definido no header */
 
 footer .icons-container {
     padding-top: 0;
 }
 
-.social-container .icons-container svg {
+footer .icons-container svg {
     fill: white;
+}
+
+footer:last-child {
+    padding-bottom: 40px;
 }
 
 /* ------ Media Queries ------ */
 @media (max-width: 719px) {
     .bg-about-me {
         height: 80vh;
-        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.7) 15%, rgba(0, 0, 0, 0) 70%), url(Images/nunomoura-low@1x.png);
+        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.7) 15%, rgba(0, 0, 0, 0) 70%), url(Images/nunomoura-low.jpg);
     }
 }
 
@@ -299,10 +299,6 @@ footer .icons-container {
     }
 
     .flex-container > li {
-        flex-basis: 50%;
-    }
-
-    .flex-container > ul {
         flex-basis: 50%;
     }
 
@@ -361,18 +357,18 @@ footer .icons-container {
         display: none;
     }
 
-    main {
-        margin-bottom: 214px;
-    }
-
     main, footer {
         width: 60vw;
         float: right;
     }
 
+    main {
+        margin-bottom: 214px;
+    }
+
     .bg-about-me {
         height: 100vh;
-        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.5) 15%, rgba(0, 0, 0, 0) 40%), url(Images/nunomoura-high@1x.png);
+        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.5) 15%, rgba(0, 0, 0, 0) 40%), url(Images/nunomoura-high.jpg);
     }
 
     .about-me-container p {
@@ -413,16 +409,16 @@ footer .icons-container {
         justify-content: center;
         background-color: inherit;
     }
-
-    .project-image {
-        width: 45vw;
-        height: 55vh;
-    }
-
+    
     figure {
         position: absolute;
         background-color: inherit;
         bottom: 0;
+    }
+
+    .project-image {
+        width: 45vw;
+        height: 55vh;
     }
 
     figcaption {
@@ -465,7 +461,7 @@ footer .icons-container {
     .projects-container svg:hover {
         opacity: 1;
     }
-    
+
     footer {
         right: 0;
     }
@@ -497,10 +493,6 @@ footer .icons-container {
     }
 
     .flex-container > li {
-        flex-basis: 50%;
-    }
-
-    .flex-container > ul {
         flex-basis: 50%;
     }
 
