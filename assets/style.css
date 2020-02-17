@@ -69,7 +69,7 @@ header {
     z-index: 2;
 }
 
-.nm-icon {
+.nm-link {
     padding-left: 8%;
     fill: #232323;
 }
@@ -99,16 +99,20 @@ nav a {
     display: flex;
 }
 
-header .dribbble-icon {
-    fill: #EA4C89;
+header .linkedin-icon {
+    fill: #007BB5;
 }
 
 header .behance-icon {
     fill: #1769FF;
 }
 
-header .linkedin-icon {
-    fill: #007BB5;
+header .dribbble-icon {
+    fill: #EA4C89;
+}
+
+header .github-icon {
+    fill: #6cc644;
 }
 
 .drag-icon {
@@ -354,6 +358,11 @@ footer:last-child {
         opacity: 1;
     }
 
+    header .github-icon:hover {
+        fill: #6cc644;
+        opacity: 1;
+    }
+
     .drag-icon {
         display: none;
     }
@@ -410,7 +419,7 @@ footer:last-child {
         justify-content: center;
         background-color: inherit;
     }
-    
+
     figure {
         position: absolute;
         background-color: inherit;
