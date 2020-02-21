@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="theme-color" content="#F2F2F2"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="description" content="This is my portfolio. Check out my projects and feel free to contact me anytime">
         <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -36,13 +35,13 @@
     <body>
         <header>
             <div class="navbar">
-                <a href="#" aria-label="Go to top" tabindex="0" class="nm-link">
+                <a href="#about-me" aria-label="Go to top" tabindex="0" class="nm-link">
                     <svg class="nm-icon" width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.6 0L10.7 7.3 4.4 0H0V21H4.2V6.3L16.8 21H21V0H16.6ZM16.8 14.4L13.4 10.5 16.8 6.3V14.4H16.8Z"/>
                     </svg>
                 </a>
                 <nav>
-                    <a href="#about-me" aria-label="Go to about me section" tabindex="0">About me</a>
+                    <a href="#career-container" aria-label="Go to about me section" tabindex="0">Career</a>
                     <a href="#projects" aria-label="Go to projects section" tabindex="0">Projects</a>
                 </nav>
             </div>
@@ -100,7 +99,7 @@
                     </svg>
                 </div>
             </article>
-            <article class="career-container">
+            <article class="career-container" id="career-container">
                 <h2 id="career">Career</h2>
                 <ul class="flex-container" aria-labelledby="career">
                     <li>
@@ -137,6 +136,7 @@
                         <h3>Soft</h3>
                         <ul aria-label="Soft skills">
                             <li><p>Dedicated</p></li>
+                            <li><p>Problem-solving</p></li>
                             <li><p>Resilient</p></li>
                             <li><p>Fast learner</p></li>
                         </ul>
@@ -144,7 +144,8 @@
                     <div>
                         <h3>Technical</h3>
                         <ul aria-label="Technical skills">
-                            <li><p>Adobe Creative Suit</p></li>
+                            <li><p>Adobe Creative Cloud</p></li>
+                            <li><p>Figma</p></li>
                             <li><p>Sketch</p></li>
                             <li><p>InVision</p></li>
                         </ul>
@@ -160,7 +161,27 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Checkout payment images">
-                                <img class="project-image" src="assets/Images/checkout-high@1x.png" srcset="assets/Images/checkout-low@1x.png 500w, assets/Images/checkout-high@1x.png 1200w, assets/Images/checkout-high@2x.png 2400w" sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Two screens of the checkout process. First screen to select the card. Second screen to add a card or choose another payment type.">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/checkout-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/checkout-high@1x.webp 1x, 
+                                                    assets/Images/webp/checkout-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/checkout-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/checkout-high@1x.png 1x, 
+                                                    assets/Images/png/checkout-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/checkout-high@1x.png"
+                                         alt="Two screens of the checkout process. First screen to select the card. Second screen to add a card or choose another payment type.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Credit card checkout for online shopping app.</p>
                                 </figcaption>
@@ -179,7 +200,27 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Profile settings images">
-                                <img class="project-image" src="assets/Images/settings-high@1x.png" srcset="assets/Images/settings-low@1x.png 500w, assets/Images/settings-high@1x.png 1200w, assets/Images/settings-high@2x.png 2400w" sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Profile settings of a social network">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/settings-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/settings-high@1x.webp 1x, 
+                                                    assets/Images/webp/settings-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/settings-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/settings-high@1x.png 1x, 
+                                                    assets/Images/png/settings-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/settings-high@1x.png"
+                                         alt="Profile settings of a social network.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Settings of a social network about monsters and bizzar experiences.</p>
                                 </figcaption>
@@ -198,7 +239,27 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Subscription form images">
-                                <img class="project-image" src="assets/Images/nasaform-high@1x.png" srcset="assets/Images/nasaform-low@1x.png 500w, assets/Images/nasaform-high@1x.png 1200w, assets/Images/nasaform-high@2x.png 2400w" sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Online form for a NASA experience">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/nasaform-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/nasaform-high@1x.webp 1x, 
+                                                    assets/Images/webp/nasaform-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/nasaform-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/nasaform-high@1x.png 1x, 
+                                                    assets/Images/png/nasaform-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/nasaform-high@1x.png"
+                                         alt="Online form for a NASA experience.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Subscribe form for a one day adventure at NASA.</p>
                                 </figcaption>
@@ -217,7 +278,27 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Whatsapp redesign images">
-                                <img class="project-image" src="assets/Images/whatsapp-high@1x.png" srcset="assets/Images/whatsapp-low@1x.png 500w, assets/Images/whatsapp-high@1x.png 1200w, assets/Images/whatsapp-high@2x.png 2400w" sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Two screens of redesign of whatsapp. Homepage and attach in message screen">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/whatsapp-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/whatsapp-high@1x.webp 1x, 
+                                                    assets/Images/webp/whatsapp-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/whatsapp-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/whatsapp-high@1x.png 1x, 
+                                                    assets/Images/png/whatsapp-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/whatsapp-high@1x.png"
+                                         alt="Two screens of redesign of whatsapp. Homepage and attach in message screen.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Project to redesign some features of whatsapp. The aim of this project was to improve the usability of the app without compromising its value to the user.</p>
                                 </figcaption>
@@ -238,16 +319,37 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Checkout process images">
-                                <img class="project-image" src="assets/Images/smarttv-high@1x.png" srcset="assets/Images/smarttv-low@1x.png 500w, assets/Images/smarttv-high@1x.png 1200w, assets/Images/smarttv-high@2x.png 2400w" sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Smart TV app for kids watch movies">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/smarttv-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/smarttv-high@1x.webp 1x, 
+                                                    assets/Images/webp/smarttv-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/smarttv-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/smarttv-high@1x.png 1x, 
+                                                    assets/Images/png/smarttv-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/smarttv-high@1x.png"
+                                         alt="Smart TV app for kids watch movies.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Filmezania it’s a Smart TV app for kids watch their favorite movies whenever they want.</p>
                                 </figcaption>
                             </figure>
                         </div>
-                        <a role="button" class="link" href="https://drive.google.com/file/d/1HgZsfIj3sNuIa17f67CeSboqa9O2fy1C/view" target="_blank" rel="noreferrer" title="View showcase PDF" aria-label="Open project PDF in a new tab" tabindex="0">
-                            <svg class="pdf-icon" width="19" height="25" viewBox="0 0 19 25" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.5 23.5V1.5H10.1C10.3 1.5 10.4 1.6 10.5 1.6L10.8 1.9V6.2C10.8 7.1 11.4 7.7 12.3 7.7H16.6L16.6 7.8C16.7 7.8 16.8 8 16.8 8.1V23.5H1.5ZM17.7 6.7L17.7 6.7C18 7.1 18.3 7.6 18.3 8.1V23.8C18.3 24.4 17.7 25 17 25H1.3C0.6 25 0 24.4 0 23.8V1.3C0 0.6 0.6 0 1.3 0H10.1C10.7 0 11.2 0.2 11.6 0.6" style="clip-rule:evenodd;fill-rule:evenodd"/>
+                        <a role="button" class="link" href="https://medium.com/@nunobmoura/filmezania-cd3b7a6d56bc" target="_blank" rel="noreferrer" title="View showcase on Medium" aria-label="Open Medium article in a new tab" tabindex="0">
+                            <svg class="medium-icon" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m2.9645 7.0488c0.03106-0.30689-0.08597-0.61022-0.31513-0.81676l-2.3343-2.812v-0.42005h7.2479l5.6023 12.286 4.9253-12.286h6.9094v0.42005l-1.9958 1.9136c-0.1721 0.13115-0.2574 0.34671-0.2218 0.56006v14.06c-0.0356 0.2133 0.0497 0.4289 0.2218 0.56l1.9491 1.9136v0.42h-9.8039v-0.42l2.0191-1.9603c0.1984-0.1983 0.1984-0.2566 0.1984-0.56v-11.365l-5.6139 14.258h-0.7586l-6.536-14.258v9.5561c-0.0545 0.4018 0.07894 0.8063 0.36181 1.0968l2.626 3.1854v0.4201h-7.4463v-0.4201l2.626-3.1854c0.28081-0.291 0.40647-0.6982 0.33847-1.0968v-11.05z"/>
                             </svg>
+
                         </a>
                     </li>
                     <li>
@@ -257,9 +359,27 @@
                         </div>
                         <div class="figure-container">
                             <figure class="image-container" aria-label="Music player images">
-                                <img class="project-image" 
-                                     src="assets/Images/musicplayer-high@1x.png" srcset="assets/Images/musicplayer-low@1x.png 500w, assets/Images/musicplayer-high@1x.png 1200w, assets/Images/musicplayer-high@2x.png 2400w" 
-                                     sizes="(max-width: 600px) 500px, (max-width: 1300px) 1200px, 2400px" alt="Music player app with two screens. The first with the current playing song and the second with an album musics list.">
+                                <picture> 
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/webp/musicplayer-low@1x.webp" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            srcset="assets/Images/webp/musicplayer-high@1x.webp 1x, 
+                                                    assets/Images/webp/musicplayer-high@2x.webp 2x" 
+                                            type="image/webp">
+                                    <source class="project-image"
+                                            media="(max-width: 720px)"
+                                            srcset="assets/Images/png/musicplayer-low@1x.png" 
+                                            type="image/png">
+                                    <source class="project-image"
+                                            srcset="assets/Images/png/musicplayer-high@1x.png 1x, 
+                                                    assets/Images/png/musicplayer-high@2x.png 2x"
+                                            type="image/png">
+                                    <img class="project-image"
+                                         src="assets/Images/png/musicplayer-high@1x.png"
+                                         alt="Music player app with two screens. The first with the current playing song and the second with an album musics list.">
+                                </picture>
                                 <figcaption>
                                     <p class="project-figcaption">Music player app with current music playing, lyrics and all the albums from the artist.</p>
                                 </figcaption>

@@ -4,7 +4,7 @@
 }
 
 body {
-    color: #F2F2F2;
+    color: #232323;
     font-family: "Source Sans Pro", Arial, sans-serif;
     background-color: #232323;
 }
@@ -136,6 +136,7 @@ main {
 }
 
 .about-me-container {
+    color: #F2F2F2;
     position: absolute;
     width: 84%;
     bottom: 8%;
@@ -148,7 +149,8 @@ main {
 
 /* ------ Resume ------ */
 .career-container {
-    margin: 80px 8% 30px;
+    padding-top: 80px;
+    margin: 0 8% 30px;
     color: #232323;
 }
 
@@ -161,7 +163,7 @@ main {
     width: 100%;
     background-color: #D9D9D9;
     border-radius: 3px;
-    margin: 40px 0;
+    margin: 55px 0;
 }
 
 .skills h3 {
@@ -212,7 +214,8 @@ figcaption {
     position: absolute;
     right: 0;
     top: 0;
-    fill: white;
+    fill: #6D6D6D;
+    mix-blend-mode: multiply;
 }
 
 .projects-container li:nth-child(1) {
@@ -224,23 +227,24 @@ figcaption {
 }
 
 .projects-container li:nth-child(3) {
-    background-color: #0B3D91;
+    background-color: #4389FF;
 }
 
 .projects-container li:nth-child(4) {
-    background-color: #2BA09C;
+    background-color: #3AC4BF;
 }
 
 .projects-container li:nth-child(5) {
-    background-color: #fe8645;
+    background-color: #FF9054;
 }
 
 .projects-container li:nth-child(6) {
-    background-color: #20ACE8;
+    background-color: #4EBEEE;
 }
 
 /* ------ Footer ------ */
 footer {
+    color: #F2F2F2;
     position: fixed;
     width: 100vw;
     bottom: 0;
@@ -290,7 +294,7 @@ footer:last-child {
 @media (max-width: 719px) {
     .bg-about-me {
         height: 80vh;
-        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.7) 15%, rgba(0, 0, 0, 0) 70%), url(Images/nunomoura-low.jpg);
+        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.7) 15%, rgba(0, 0, 0, 0) 70%), url(Images/png/nunomoura-low.jpg);
     }
 }
 
@@ -313,6 +317,10 @@ footer:last-child {
 
     .footer-description {
         width: 100%;
+    }
+
+    .line-break {
+        margin: 75px 0;
     }
 }
 
@@ -378,7 +386,7 @@ footer:last-child {
 
     .bg-about-me {
         height: 100vh;
-        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.5) 15%, rgba(0, 0, 0, 0) 40%), url(Images/nunomoura-high.jpg);
+        background-image: linear-gradient(to top, rgba(5, 5, 5, 0.5) 15%, rgba(0, 0, 0, 0) 40%), url(Images/png/nunomoura-high.jpg);
     }
 
     .about-me-container p {
@@ -396,7 +404,8 @@ footer:last-child {
     }
 
     .career-container {
-        margin: 80px 8%;
+        margin: 0 8%;
+        padding: 80px 0;
     }
 
     .projects {
@@ -463,8 +472,7 @@ footer:last-child {
     .projects-container svg {
         top: auto;
         bottom: 0;
-        fill: white;
-        opacity: 0.4;
+        opacity: 0.65;
         transition: 0.2s ease;
     }
 
@@ -508,5 +516,9 @@ footer:last-child {
 
     .flex-container > div {
         flex-basis: 50%;
+    }
+
+    .line-break {
+        margin: 75px 0;
     }
 }
