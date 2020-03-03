@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #232323;
     font-family: "Source Sans Pro", Arial, sans-serif;
-    background-color: #232323;
+    background-color: #4A4A4A;
 }
 
 h1 {
@@ -149,8 +153,9 @@ main {
 
 /* ------ Resume ------ */
 .career-container {
-    padding-top: 80px;
-    margin: 0 8% 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 8%;
     color: #232323;
 }
 
@@ -159,10 +164,11 @@ main {
 }
 
 .line-break {
-    height: 6px;
+    height: 2px;
     width: 100%;
+    opacity: 0.4;
     background-color: #D9D9D9;
-    border-radius: 3px;
+    border-radius: 1px;
     margin: 55px 0;
 }
 
@@ -175,8 +181,8 @@ main {
 }
 
 /* ------ Projects ------ */
-.projects {
-    padding-top: 50px;
+.projects-title {
+    padding: 50px 8% 0;
 }
 
 .projects-container li {
@@ -218,7 +224,7 @@ figcaption {
     mix-blend-mode: multiply;
 }
 
-.projects-container li:nth-child(1) {
+.projects-title, .projects-container li:nth-child(1) {
     background-color: #FFB950;
 }
 
@@ -231,14 +237,6 @@ figcaption {
 }
 
 .projects-container li:nth-child(4) {
-    background-color: #3AC4BF;
-}
-
-.projects-container li:nth-child(5) {
-    background-color: #FF9054;
-}
-
-.projects-container li:nth-child(6) {
     background-color: #4EBEEE;
 }
 
@@ -332,12 +330,13 @@ footer:last-child {
     header {
         position: fixed;
         float: left;
+        z-index: 10;
         box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
         padding: 10px 3vw 10px 10px;
-        opacity: 0.4;
+        opacity: 0.65;
         transition: 0.2s ease;
     }
 

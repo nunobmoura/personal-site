@@ -41,8 +41,8 @@
                     </svg>
                 </a>
                 <nav>
-                    <a href="#career-container" aria-label="Go to about me section" tabindex="0">Career</a>
                     <a href="#projects" aria-label="Go to projects section" tabindex="0">Projects</a>
+                    <a href="#career-container" aria-label="Go to about me section" tabindex="0">Career</a>
                 </nav>
             </div>
             <div class="header-container">
@@ -99,60 +99,8 @@
                     </svg>
                 </div>
             </article>
-            <article class="career-container" id="career-container">
-                <h2 id="career">Career</h2>
-                <ul class="flex-container" aria-labelledby="career">
-                    <li>
-                        <h3>Get Mood</h3>
-                        <h4>Mar 2019 to Sep 2019</h4>
-                        <p>Branding and events agency</p>
-                        <p>Communication designer</p>
-                    </li>
-                    <li>
-                        <h3>Information Planet</h3>
-                        <h4>Dec 2018 to Apr 2019</h4>
-                        <p>Educational agency</p>
-                        <p>Communication designer</p>
-                    </li>
-                </ul>
-                <div class="line-break"></div>
-                <h2 id="studies">Studies</h2>
-                <ul class="flex-container"  aria-labelledby="studies">
-                    <li>
-                        <h3>Digital Experience Design</h3>
-                        <h4>2019 to present</h4>
-                        <p>Postgraduate course</p>
-                    </li>
-                    <li>
-                        <h3>Communication design</h3>
-                        <h4>2015 to 2018</h4>
-                        <p>Bachelor degree</p>
-                    </li>
-                </ul>
-                <div class="line-break"></div>
-                <h2>Skills</h2>
-                <div class="skills flex-container">
-                    <div>
-                        <h3>Soft</h3>
-                        <ul aria-label="Soft skills">
-                            <li><p>Dedicated</p></li>
-                            <li><p>Problem-solving</p></li>
-                            <li><p>Resilient</p></li>
-                            <li><p>Fast learner</p></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Technical</h3>
-                        <ul aria-label="Technical skills">
-                            <li><p>Adobe Creative Cloud</p></li>
-                            <li><p>Figma</p></li>
-                            <li><p>Sketch</p></li>
-                            <li><p>InVision</p></li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
             <article id="projects" class="projects" aria-label="Projects show case">
+                <h2 class="projects-title">Projects</h2>
                 <ul class="projects-container">
                     <li>
                         <div class="project-description">
@@ -273,87 +221,6 @@
                     </li>
                     <li>
                         <div class="project-description">
-                            <h4>Mobile - UX/UI</h4>
-                            <p>Whatsapp redesign</p>
-                        </div>
-                        <div class="figure-container">
-                            <figure class="image-container" aria-label="Whatsapp redesign images">
-                                <picture> 
-                                    <source class="project-image"
-                                            media="(max-width: 720px)"
-                                            srcset="assets/Images/webp/whatsapp-low@1x.webp" 
-                                            type="image/webp">
-                                    <source class="project-image"
-                                            srcset="assets/Images/webp/whatsapp-high@1x.webp 1x, 
-                                                    assets/Images/webp/whatsapp-high@2x.webp 2x" 
-                                            type="image/webp">
-                                    <source class="project-image"
-                                            media="(max-width: 720px)"
-                                            srcset="assets/Images/png/whatsapp-low@1x.png" 
-                                            type="image/png">
-                                    <source class="project-image"
-                                            srcset="assets/Images/png/whatsapp-high@1x.png 1x, 
-                                                    assets/Images/png/whatsapp-high@2x.png 2x"
-                                            type="image/png">
-                                    <img class="project-image"
-                                         src="assets/Images/png/whatsapp-high@1x.png"
-                                         alt="Two screens of redesign of whatsapp. Homepage and attach in message screen.">
-                                </picture>
-                                <figcaption>
-                                    <p class="project-figcaption">Project to redesign some features of whatsapp. The aim of this project was to improve the usability of the app without compromising its value to the user.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <a role="button" class="link" href="https://www.behance.net/gallery/79023681/WhatsApp-Redesign" target="_blank" rel="noreferrer" title="View project on Behance" aria-label="Open Behance project in a new tab" tabindex="0">
-                            <svg class="behance-icon" width="25" height="16" viewBox="0 0 40 25" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.5 24C15.5 23.8 16.4 23.4 17.2 22.8 17.9 22.3 18.5 21.7 19 20.9 19.7 19.8 20 18.5 20 17 20 15.6 19.7 14.4 19.1 13.4 18.4 12.5 17.5 11.7 16.3 11.3 17.1 10.9 17.7 10.4 18.1 9.9 18.9 9 19.3 7.8 19.3 6.3 19.3 4.9 18.9 3.6 18.1 2.6 16.9 0.9 14.8 0.1 11.8 0H0.1V24.4H11C12.3 24.4 13.4 24.3 14.5 24ZM4.9 4.2H10.2C11.4 4.2 12.3 4.4 13.1 4.6 14 5 14.4 5.7 14.4 6.9 14.4 7.9 14.1 8.6 13.4 9 12.8 9.4 11.9 9.6 10.8 9.6H4.9V4.2ZM4.9 20.2V13.7H10.9C11.9 13.7 12.8 13.8 13.3 14.1 14.4 14.6 14.9 15.4 14.9 16.7 14.9 18.2 14.4 19.2 13.3 19.7 12.7 20 11.9 20.2 10.8 20.2H4.9Z"/>
-                                <path d="M24.2 22.8C26 24.3 28.1 25 30.5 25 33.4 25 35.7 24.1 37.3 22.4 38.3 21.3 38.9 20.2 39.1 19.1H34.2C34 19.6 33.6 20 33.3 20.4 32.6 20.9 31.7 21.2 30.7 21.2 29.7 21.2 28.8 21 28.1 20.5 26.9 19.8 26.3 18.5 26.2 16.7H39.3C39.3 15.1 39.3 14 39.2 13.1 38.9 11.7 38.5 10.5 37.7 9.4 36.9 8.2 35.9 7.3 34.6 6.7 33.3 6.1 31.9 5.9 30.4 5.9 27.7 5.9 25.6 6.7 23.9 8.4 22.3 10 21.4 12.4 21.4 15.6 21.4 18.9 22.3 21.3 24.2 22.8ZM27.5 10.8C28.2 10.1 29.1 9.8 30.3 9.8 31.5 9.8 32.4 10.1 33.1 10.8 33.9 11.4 34.3 12.3 34.4 13.6H26.3C26.5 12.4 26.9 11.5 27.5 10.8Z"/>
-                                <path d="M35.3 1.4H24.8V3.9H35.3V1.4Z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="project-description">
-                            <h4>Smart TV - UX/UI</h4>
-                            <p>Filmezania</p>
-                        </div>
-                        <div class="figure-container">
-                            <figure class="image-container" aria-label="Checkout process images">
-                                <picture> 
-                                    <source class="project-image"
-                                            media="(max-width: 720px)"
-                                            srcset="assets/Images/webp/smarttv-low@1x.webp" 
-                                            type="image/webp">
-                                    <source class="project-image"
-                                            srcset="assets/Images/webp/smarttv-high@1x.webp 1x, 
-                                                    assets/Images/webp/smarttv-high@2x.webp 2x" 
-                                            type="image/webp">
-                                    <source class="project-image"
-                                            media="(max-width: 720px)"
-                                            srcset="assets/Images/png/smarttv-low@1x.png" 
-                                            type="image/png">
-                                    <source class="project-image"
-                                            srcset="assets/Images/png/smarttv-high@1x.png 1x, 
-                                                    assets/Images/png/smarttv-high@2x.png 2x"
-                                            type="image/png">
-                                    <img class="project-image"
-                                         src="assets/Images/png/smarttv-high@1x.png"
-                                         alt="Smart TV app for kids watch movies.">
-                                </picture>
-                                <figcaption>
-                                    <p class="project-figcaption">Filmezania it’s a Smart TV app for kids watch their favorite movies whenever they want.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <a role="button" class="link" href="https://medium.com/@nunobmoura/filmezania-cd3b7a6d56bc" target="_blank" rel="noreferrer" title="View showcase on Medium" aria-label="Open Medium article in a new tab" tabindex="0">
-                            <svg class="medium-icon" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                                <path d="m2.9645 7.0488c0.03106-0.30689-0.08597-0.61022-0.31513-0.81676l-2.3343-2.812v-0.42005h7.2479l5.6023 12.286 4.9253-12.286h6.9094v0.42005l-1.9958 1.9136c-0.1721 0.13115-0.2574 0.34671-0.2218 0.56006v14.06c-0.0356 0.2133 0.0497 0.4289 0.2218 0.56l1.9491 1.9136v0.42h-9.8039v-0.42l2.0191-1.9603c0.1984-0.1983 0.1984-0.2566 0.1984-0.56v-11.365l-5.6139 14.258h-0.7586l-6.536-14.258v9.5561c-0.0545 0.4018 0.07894 0.8063 0.36181 1.0968l2.626 3.1854v0.4201h-7.4463v-0.4201l2.626-3.1854c0.28081-0.291 0.40647-0.6982 0.33847-1.0968v-11.05z"/>
-                            </svg>
-
-                        </a>
-                    </li>
-                    <li>
-                        <div class="project-description">
                             <h4>Mobile - UI</h4>
                             <p>Music player</p>
                         </div>
@@ -392,6 +259,59 @@
                         </a>
                     </li>
                 </ul>
+            </article>
+            <article class="career-container" id="career-container">
+                <h2 id="career">Career</h2>
+                <ul class="flex-container" aria-labelledby="career">
+                    <li>
+                        <h3>Get Mood</h3>
+                        <h4>Mar 2019 to Sep 2019</h4>
+                        <p>Branding and events agency</p>
+                        <p>Communication designer</p>
+                    </li>
+                    <li>
+                        <h3>Information Planet</h3>
+                        <h4>Dec 2018 to Apr 2019</h4>
+                        <p>Educational agency</p>
+                        <p>Communication designer</p>
+                    </li>
+                </ul>
+                <div class="line-break"></div>
+                <h2 id="studies">Studies</h2>
+                <ul class="flex-container"  aria-labelledby="studies">
+                    <li>
+                        <h3>Digital Experience Design</h3>
+                        <h4>2019 to present</h4>
+                        <p>Postgraduate course</p>
+                    </li>
+                    <li>
+                        <h3>Communication design</h3>
+                        <h4>2015 to 2018</h4>
+                        <p>Bachelor degree</p>
+                    </li>
+                </ul>
+                <div class="line-break"></div>
+                <h2>Skills</h2>
+                <div class="skills flex-container">
+                    <div>
+                        <h3>Soft</h3>
+                        <ul aria-label="Soft skills">
+                            <li><p>Dedicated</p></li>
+                            <li><p>Problem-solving</p></li>
+                            <li><p>Resilient</p></li>
+                            <li><p>Fast learner</p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Technical</h3>
+                        <ul aria-label="Technical skills">
+                            <li><p>Adobe Creative Cloud</p></li>
+                            <li><p>Figma</p></li>
+                            <li><p>Sketch</p></li>
+                            <li><p>InVision</p></li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </main>
         <footer aria-label="footer">
@@ -448,3 +368,87 @@
     </body>
 </html>
 <!-- Nuno Moura -->
+
+<!--
+<li>
+<div class="project-description">
+<h4>Mobile - UX/UI</h4>
+<p>Whatsapp redesign</p>
+</div>
+<div class="figure-container">
+<figure class="image-container" aria-label="Whatsapp redesign images">
+<picture> 
+<source class="project-image"
+media="(max-width: 720px)"
+srcset="assets/Images/webp/whatsapp-low@1x.webp" 
+type="image/webp">
+<source class="project-image"
+srcset="assets/Images/webp/whatsapp-high@1x.webp 1x, 
+assets/Images/webp/whatsapp-high@2x.webp 2x" 
+type="image/webp">
+<source class="project-image"
+media="(max-width: 720px)"
+srcset="assets/Images/png/whatsapp-low@1x.png" 
+type="image/png">
+<source class="project-image"
+srcset="assets/Images/png/whatsapp-high@1x.png 1x, 
+assets/Images/png/whatsapp-high@2x.png 2x"
+type="image/png">
+<img class="project-image"
+src="assets/Images/png/whatsapp-high@1x.png"
+alt="Two screens of redesign of whatsapp. Homepage and attach in message screen.">
+</picture>
+<figcaption>
+<p class="project-figcaption">Project to redesign some features of whatsapp. The aim of this project was to improve the usability of the app without compromising its value to the user.</p>
+</figcaption>
+</figure>
+</div>
+<a role="button" class="link" href="https://www.behance.net/gallery/79023681/WhatsApp-Redesign" target="_blank" rel="noreferrer" title="View project on Behance" aria-label="Open Behance project in a new tab" tabindex="0">
+<svg class="behance-icon" width="25" height="16" viewBox="0 0 40 25" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5 24C15.5 23.8 16.4 23.4 17.2 22.8 17.9 22.3 18.5 21.7 19 20.9 19.7 19.8 20 18.5 20 17 20 15.6 19.7 14.4 19.1 13.4 18.4 12.5 17.5 11.7 16.3 11.3 17.1 10.9 17.7 10.4 18.1 9.9 18.9 9 19.3 7.8 19.3 6.3 19.3 4.9 18.9 3.6 18.1 2.6 16.9 0.9 14.8 0.1 11.8 0H0.1V24.4H11C12.3 24.4 13.4 24.3 14.5 24ZM4.9 4.2H10.2C11.4 4.2 12.3 4.4 13.1 4.6 14 5 14.4 5.7 14.4 6.9 14.4 7.9 14.1 8.6 13.4 9 12.8 9.4 11.9 9.6 10.8 9.6H4.9V4.2ZM4.9 20.2V13.7H10.9C11.9 13.7 12.8 13.8 13.3 14.1 14.4 14.6 14.9 15.4 14.9 16.7 14.9 18.2 14.4 19.2 13.3 19.7 12.7 20 11.9 20.2 10.8 20.2H4.9Z"/>
+<path d="M24.2 22.8C26 24.3 28.1 25 30.5 25 33.4 25 35.7 24.1 37.3 22.4 38.3 21.3 38.9 20.2 39.1 19.1H34.2C34 19.6 33.6 20 33.3 20.4 32.6 20.9 31.7 21.2 30.7 21.2 29.7 21.2 28.8 21 28.1 20.5 26.9 19.8 26.3 18.5 26.2 16.7H39.3C39.3 15.1 39.3 14 39.2 13.1 38.9 11.7 38.5 10.5 37.7 9.4 36.9 8.2 35.9 7.3 34.6 6.7 33.3 6.1 31.9 5.9 30.4 5.9 27.7 5.9 25.6 6.7 23.9 8.4 22.3 10 21.4 12.4 21.4 15.6 21.4 18.9 22.3 21.3 24.2 22.8ZM27.5 10.8C28.2 10.1 29.1 9.8 30.3 9.8 31.5 9.8 32.4 10.1 33.1 10.8 33.9 11.4 34.3 12.3 34.4 13.6H26.3C26.5 12.4 26.9 11.5 27.5 10.8Z"/>
+<path d="M35.3 1.4H24.8V3.9H35.3V1.4Z"/>
+</svg>
+</a>
+</li>
+<li>
+<div class="project-description">
+<h4>Smart TV - UX/UI</h4>
+<p>Filmezania</p>
+</div>
+<div class="figure-container">
+<figure class="image-container" aria-label="Checkout process images">
+<picture> 
+<source class="project-image"
+media="(max-width: 720px)"
+srcset="assets/Images/webp/smarttv-low@1x.webp" 
+type="image/webp">
+<source class="project-image"
+srcset="assets/Images/webp/smarttv-high@1x.webp 1x, 
+assets/Images/webp/smarttv-high@2x.webp 2x" 
+type="image/webp">
+<source class="project-image"
+media="(max-width: 720px)"
+srcset="assets/Images/png/smarttv-low@1x.png" 
+type="image/png">
+<source class="project-image"
+srcset="assets/Images/png/smarttv-high@1x.png 1x, 
+assets/Images/png/smarttv-high@2x.png 2x"
+type="image/png">
+<img class="project-image"
+src="assets/Images/png/smarttv-high@1x.png"
+alt="Smart TV app for kids watch movies.">
+</picture>
+<figcaption>
+<p class="project-figcaption">Filmezania it’s a Smart TV app for kids watch their favorite movies whenever they want.</p>
+</figcaption>
+</figure>
+</div>
+<a role="button" class="link" href="https://medium.com/@nunobmoura/filmezania-cd3b7a6d56bc" target="_blank" rel="noreferrer" title="View showcase on Medium" aria-label="Open Medium article in a new tab" tabindex="0">
+<svg class="medium-icon" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+<path d="m2.9645 7.0488c0.03106-0.30689-0.08597-0.61022-0.31513-0.81676l-2.3343-2.812v-0.42005h7.2479l5.6023 12.286 4.9253-12.286h6.9094v0.42005l-1.9958 1.9136c-0.1721 0.13115-0.2574 0.34671-0.2218 0.56006v14.06c-0.0356 0.2133 0.0497 0.4289 0.2218 0.56l1.9491 1.9136v0.42h-9.8039v-0.42l2.0191-1.9603c0.1984-0.1983 0.1984-0.2566 0.1984-0.56v-11.365l-5.6139 14.258h-0.7586l-6.536-14.258v9.5561c-0.0545 0.4018 0.07894 0.8063 0.36181 1.0968l2.626 3.1854v0.4201h-7.4463v-0.4201l2.626-3.1854c0.28081-0.291 0.40647-0.6982 0.33847-1.0968v-11.05z"/>
+</svg>
+
+</a>
+</li>
+-->
