@@ -28,19 +28,19 @@ h2 {
 h3 {
     font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 28px;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 200;
-    line-height: 25px;
+    line-height: 28px;
 }
 
 p, a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
 }
 
 a {
@@ -224,20 +224,39 @@ figcaption {
     mix-blend-mode: multiply;
 }
 
+/* - checkout payment - */
 .projects-title, .projects-container li:nth-child(1) {
-    background-color: #FFB950;
+    background-color: #F9B959;
 }
 
+/* - beertown - */
 .projects-container li:nth-child(2) {
+    background-color: #A1A5E8;
+}
+
+/* - profile settings - */
+.projects-container li:nth-child(3) {
     background-color: #6CCD6B;
 }
 
-.projects-container li:nth-child(3) {
-    background-color: #4389FF;
+/* - research - */
+.projects-container li:nth-child(4) {
+    background-color: #F4CF54;
 }
 
-.projects-container li:nth-child(4) {
-    background-color: #4EBEEE;
+/* - music player - */
+.projects-container li:nth-child(5) {
+    background-color: #C6E4DD;
+}
+
+/* - 404 page - */
+.projects-container li:nth-child(6) {
+    background-color: #6B9FF7;
+}
+
+/* - quiz - */
+.projects-container li:nth-child(7) {
+    background-color: #F79A6C;
 }
 
 /* ------ Footer ------ */
@@ -319,6 +338,11 @@ footer:last-child {
 
     .line-break {
         margin: 75px 0;
+    }
+
+    .footer-description h4 {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -458,9 +482,9 @@ footer:last-child {
     }
 
     .project-figcaption {
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
     }
 
     .link {
@@ -489,6 +513,11 @@ footer:last-child {
 
     footer .icons-container {
         display: none;
+    }
+
+    .footer-description h4 {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
