@@ -6,15 +6,21 @@ import Button from '../components/button'
 import Experience from '../components/experience'
 import Education from '../components/education'
 import Goal from '../components/goals'
+import LinkBtn from '../components/linkbtn'
 
 const IndexPage = () => (
   <Layout>
     <div>
-      <p>Image will be here</p>
       <Desc />
       <div>
-        <Button label="button 01" />
-        <Button label="button 02" />
+        <Button
+          label="Google"
+          href='https://google.com'
+        />
+        <Button
+          label="Google"
+          href='https://google.com'
+        />
       </div>
     </div>
     <div>
@@ -24,6 +30,7 @@ const IndexPage = () => (
     <div>
       <Goal />
     </div>
+    <LinkBtn />
   </Layout>
 )
 

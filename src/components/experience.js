@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Experience = () => {
   const data = useStaticQuery(graphql`
@@ -23,14 +23,15 @@ const Experience = () => {
       }
     }
   `)
+
   return (
     <div>
       <h3>Experience</h3>
       <ol>
         {data.allContentfulExperience.edges.map((edge) => (
-          <li>
+          <li key={edge.node.company.replace( /\s/g, '')}>
             <h4>{edge.node.startDate}{edge.node.finishDate ? ` - ${edge.node.finishDate}` : ` - present`}</h4>
-            <p>{edge.node.position} - {edge.node.link ? <Link to={edge.node.link}>{edge.node.company}</Link> : edge.node.company}</p>
+            <p>{edge.node.position} - {edge.node.link ? <a href={edge.node.link} target="_blank" rel="noreferrer">{edge.node.company}</a> : edge.node.company}</p>
             <p>{edge.node.location}</p>
           </li>
         ))}

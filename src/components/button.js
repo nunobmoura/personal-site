@@ -1,13 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const Button = (props) => {
   return (
-    <p>
-      <Link to="https://google.com">
+      <a href={props.href} target="_blank" rel="noreferrer" title={`Link to Nuno Moura's ${props.label} profile`}>
         {props.label}
-      </Link>
-    </p>
+      </a>
   )
 }
 

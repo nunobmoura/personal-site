@@ -17,6 +17,13 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `static`,
+        path: `${__dirname}/src/static/`
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

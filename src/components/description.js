@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Desc = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +15,7 @@ const Desc = () => {
 
   return (
     <div>
-      <h2>{data.contentfulIntro.jobTitle} @ <Link to={data.contentfulIntro.companyLink}>{data.contentfulIntro.company}</Link></h2>
+      <h2>{data.contentfulIntro.jobTitle} <span className="nowrap">@ <a href={data.contentfulIntro.companyLink} target="_blank" rel="noreferrer">{data.contentfulIntro.company}</a></span></h2>
       <p>{data.contentfulIntro.description}</p>
     </div>
   )
