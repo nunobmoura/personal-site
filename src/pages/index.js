@@ -1,37 +1,44 @@
 import React from 'react'
 
-import Layout from '../layouts/layout'
-import Desc from '../components/description'
+import Header from '../components/header'
+import Image from '../components/image'
+import Description from '../components/description'
 import Button from '../components/button'
 import Experience from '../components/experience'
 import Education from '../components/education'
 import Goal from '../components/goals'
-import LinkBtn from '../components/linkbtn'
+import Footer from '../components/footer'
+import ResumeBtn from '../components/resumeBtn'
 
 const IndexPage = () => (
-  <Layout>
-    <div>
-      <Desc />
-      <div>
-        <Button
-          label="Google"
-          href='https://google.com'
-        />
-        <Button
-          label="Google"
-          href='https://google.com'
-        />
-      </div>
-    </div>
-    <div>
-      <Experience />
-      <Education />
-    </div>
-    <div>
-      <Goal />
-    </div>
-    <LinkBtn />
-  </Layout>
+  <div>
+    <Image />
+    <Header />
+    <main>
+      <section>
+        <Description />
+        <div>
+          <Button
+            label="Google"
+            href='https://google.com'
+          />
+          <Button
+            label="Google"
+            href='https://google.com'
+          />
+        </div>
+      </section>
+      <section>
+        <Experience />
+        <Education />
+      </section>
+      <section>
+        <Goal />
+        <ResumeBtn />
+      </section>
+    </main>
+    <Footer />
+  </div>
 )
 
 export default IndexPage

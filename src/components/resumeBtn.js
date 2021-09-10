@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const LinkBtn = () => {
+const ResumeBtn = () => {
   const data = useStaticQuery(graphql`
     query {
       file {
@@ -11,8 +11,8 @@ const LinkBtn = () => {
   `)
 
   return (
-    <a href={data.file.publicURL} target="_blank" rel="noreferrer">Resume SQL</a>
+    <a href={data.file.publicURL} target="_blank" rel="noreferrer">Resume</a>
   )
 }
 
-export default LinkBtn
+export default ResumeBtn

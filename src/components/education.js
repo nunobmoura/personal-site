@@ -28,7 +28,7 @@ const Education = () => {
       <h3>Education</h3>
       <ol>
         {data.allContentfulEducation.edges.map((edge) => (
-          <li key={edge.node.courseName.replace( /\s/g, '')}>
+          <li key={edge.node.courseName.replace(/\s/g, '')}>
             <h4>{edge.node.startDate ? `${edge.node.startDate} - ${edge.node.finishDate}` : `Ongoing`}</h4>
             <p>
               {edge.node.link ? <a href={edge.node.link} target="_blank" rel="noreferrer">{edge.node.courseName}</a> : edge.node.courseName}

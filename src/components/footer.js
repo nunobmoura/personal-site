@@ -13,7 +13,9 @@ const Footer = () => {
   `)
 
   return (
-    <p>Designed and coded with &#128153; by {data.site.siteMetadata.title}</p>
+    <footer>
+      <p>Designed and coded with &#128153; by {data.site.siteMetadata.title}</p>
+    </footer>
   )
 }
 

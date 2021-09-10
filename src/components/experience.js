@@ -29,7 +29,7 @@ const Experience = () => {
       <h3>Experience</h3>
       <ol>
         {data.allContentfulExperience.edges.map((edge) => (
-          <li key={edge.node.company.replace( /\s/g, '')}>
+          <li key={edge.node.company.replace(/\s/g, '')}>
             <h4>{edge.node.startDate}{edge.node.finishDate ? ` - ${edge.node.finishDate}` : ` - present`}</h4>
             <p>{edge.node.position} - {edge.node.link ? <a href={edge.node.link} target="_blank" rel="noreferrer">{edge.node.company}</a> : edge.node.company}</p>
             <p>{edge.node.location}</p>
