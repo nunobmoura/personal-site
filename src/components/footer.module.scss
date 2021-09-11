@@ -1,0 +1,15 @@
+@import "../styles/variables";
+
+.container {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  p {
+    font-size: .75rem;
+    line-height: 1rem;
+    color: $caption;
+  }
+  span {
+    font-size: .6rem;
+    opacity: .7;
+  }
+}

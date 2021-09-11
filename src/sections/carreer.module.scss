@@ -1,0 +1,17 @@
+@import "../styles/variables";
+
+.carreer-container {
+  background: $neutral-bg;
+  h2 {
+    color: $accent-dark;
+  }
+  ol {
+    list-style: none;
+  }
+  h3, p {
+    color: white;
+  }
+  a {
+    color: $accent-links;
+  }
+}

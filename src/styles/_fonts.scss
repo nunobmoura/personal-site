@@ -1,0 +1,56 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: $neutral-dark;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 5.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+  strong {
+    color: $accent-light;
+  }
+}
+
+a {
+  color: $accent-light;
+  border-radius: 8px;
+  // display: inline-block;
+  // padding: 0 .25rem .25rem;
+}
+
+button, p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  &.bold {
+    font-weight: 700;
+  }
+}

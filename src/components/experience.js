@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import * as experienceStyles from './edu-exp.module.scss'
+
 const Experience = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -25,12 +27,12 @@ const Experience = () => {
   `)
 
   return (
-    <div>
-      <h3>Experience</h3>
+    <div className={experienceStyles.container}>
+      <h2>Experience</h2>
       <ol>
         {data.allContentfulExperience.edges.map((edge) => (
           <li key={edge.node.company.replace(/\s/g, '')}>
-            <h4>{edge.node.startDate}{edge.node.finishDate ? ` - ${edge.node.finishDate}` : ` - present`}</h4>
+            <h3>{edge.node.startDate}{edge.node.finishDate ? ` - ${edge.node.finishDate}` : ` - present`}</h3>
             <p>{edge.node.position} - {edge.node.link ? <a href={edge.node.link} target="_blank" rel="noreferrer">{edge.node.company}</a> : edge.node.company}</p>
             <p>{edge.node.location}</p>
           </li>

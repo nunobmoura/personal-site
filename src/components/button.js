@@ -1,10 +1,17 @@
 import React from 'react'
 
+import * as btnStyles from './button.module.scss'
+
 const Button = (props) => {
   return (
-      <a href={props.href} target="_blank" rel="noreferrer" title={`Link to Nuno Moura's ${props.label} profile`}>
-        {props.label}
-      </a>
+    <button
+      className={btnStyles.btn}
+      href={props.href}
+      title={`Link to Nuno Moura's ${props.label}`}
+      target="_blank" rel="noreferrer"
+    >
+      {props.label}
+    </button>
   )
 }
 

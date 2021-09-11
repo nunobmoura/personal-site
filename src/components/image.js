@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import * as imageStyles from './image.module.scss'
+
 const Image = () => {
   const data = useStaticQuery(graphql`
   query {
@@ -14,9 +16,9 @@ const Image = () => {
   `)
 
   return (
-    <picture>
-      <img src={data.contentfulAsset.file.url} alt={data.contentfulAsset.description} />
-    </picture>
+    <div className={imageStyles.container}>
+      <img src={data.contentfulAsset.file.url} alt={data.contentfulAsset.description} className={imageStyles.image} />
+    </div>
   )
 }
 

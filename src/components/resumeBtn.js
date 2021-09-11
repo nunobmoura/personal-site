@@ -11,7 +11,9 @@ const ResumeBtn = () => {
   `)
 
   return (
-    <a href={data.file.publicURL} target="_blank" rel="noreferrer">Resume</a>
+    <button href={data.file.publicURL} target="_blank" rel="noreferrer">
+      Resume
+    </button>
   )
 }
 
