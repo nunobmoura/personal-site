@@ -12,20 +12,24 @@ const Intro = () => (
   <section className={introStyles.introContainer}>
     <Image />
     <div className="grid-container">
-      <Header />
-      <Description />
-      <div className={introStyles.btnsContainer}>
-        <Button
-          label="Google"
-          href='https://google.com'
-        />
-        <Button
-          label="Google"
-          href='https://google.com'
-        />
+      <div className={introStyles.descriptionContainer}>
+        <Header />
+        <Description />
+        <div className={introStyles.btnsContainer}>
+          <Button
+            label="Google"
+            href='https://google.com'
+          />
+          <Button
+            label="Google"
+            href='https://google.com'
+          />
+        </div>
       </div>
     </div>
   </section>
 )
 
 export default Intro
+
+// introStyles.descriptionContainer2 => "grid-container"

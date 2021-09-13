@@ -1,7 +1,15 @@
 .intro-container {
-  height: 100vh;
+  min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.description-container {
+  min-height: calc(100vh - (30vh + 2.5rem));
+  display: flex;
+  flex-direction: column;
 }
 
 .btns-container {
-  background: red;
+  padding-bottom: 3.5rem;
 }
