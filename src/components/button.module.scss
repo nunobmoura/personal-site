@@ -1,15 +1,27 @@
 @import "../styles/variables";
 
-.btn {
-  align-items: center;
-  border: none;
-  border-radius: .5em;
+.button a {
+  // align-items: center;
+  // border: none;
+  // border-radius: .5em;
   display: flex;
-  flex: 1 1 0px;
+  // flex: 1 1 0px;
   padding: .5em 0;
   justify-content: center;
+  // width: 100%;
+  margin-bottom: .75rem;
+  text-decoration: none;
+  // font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+:global(.btnPrimary) {
   background: $accent-light;
   color: white;
-  width: 100%;
-  margin-bottom: .75rem;
+}
+
+:global(.btnSecondary) {
+  background: $neutral-light;
+  color: $neutral-dark;
 }

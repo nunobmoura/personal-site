@@ -1,15 +1,31 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Goal from '../components/goals'
-import ResumeBtn from '../components/resumeBtn'
+import Button from '../components/button'
 
-const Goals = () => (
-  <section className="goals-container">
-    <div className="grid-container">
-      <Goal />
-      <ResumeBtn />
-    </div>
-  </section>
-)
+import * as goalsStyles from './goals.module.scss'
+
+const Goals = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    file {
+      publicURL
+    }
+  }
+`)
+  return (
+    <section className={goalsStyles.goalsContainer}>
+      <div className="grid-container">
+        <Goal />
+        <Button
+          label="Resumé"
+          href={data.file.publicURL}
+          class='btnSecondary'
+        />
+      </div>
+    </section>
+  )
+}
 
 export default Goals

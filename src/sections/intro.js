@@ -19,10 +19,12 @@ const Intro = () => (
           <Button
             label="Google"
             href='https://google.com'
+            class='btnPrimary'
           />
           <Button
             label="Google"
             href='https://google.com'
+            class='btnPrimary'
           />
         </div>
       </div>

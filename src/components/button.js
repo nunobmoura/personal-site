@@ -4,14 +4,16 @@ import * as btnStyles from './button.module.scss'
 
 const Button = (props) => {
   return (
-    <button
-      className={btnStyles.btn}
-      href={props.href}
-      title={`Link to Nuno Moura's ${props.label}`}
-      target="_blank" rel="noreferrer"
-    >
-      {props.label}
-    </button>
+    <div className={btnStyles.button}>
+      <a
+        className={props.class}
+        href={props.href}
+        title={`Link to Nuno Moura's ${props.label}`}
+        target="_blank" rel="noreferrer"
+      >
+        {props.label}
+      </a>
+    </div>
   )
 }
 
