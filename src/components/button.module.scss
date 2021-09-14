@@ -14,14 +14,23 @@
   // font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 600;
+  transition: .2s ease-in-out;
 }
 
 :global(.btnPrimary) {
-  background: $accent-light;
-  color: white;
+  background: $primary900;
+  color: $neutral0;
+  &:hover {
+    background: $primary800;
+    color: $neutral0;
+  }
 }
 
 :global(.btnSecondary) {
-  background: $neutral-light;
-  color: $neutral-dark;
+  background: $neutral100;
+  color: $neutral800;
+  &:hover {
+    background: $neutral200;
+    color: $neutral800;
+  }
 }

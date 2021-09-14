@@ -6,11 +6,9 @@ import Education from '../components/education'
 import * as carreerStyles from './carreer.module.scss'
 
 const Carreer = () => (
-  <section className={carreerStyles.carreerContainer}>
-    <div className="grid-container">
-      <Experience />
-      <Education />
-    </div>
+  <section className={`${carreerStyles.carreerContainer} grid-container carreer-container`}>
+    <Experience />
+    <Education />
   </section>
 )
 

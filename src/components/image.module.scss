@@ -2,7 +2,7 @@
   width: 100vw;
   height: 30vh;
   overflow: hidden;
-  background: slategrey;
+  background: red;
   margin-bottom: 2.5rem;
 }
 
@@ -10,4 +10,20 @@
   width: 100vw;
   height: auto;
   transform: translateY(-20%);
+  
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+  
+  .image {
+    width: auto;
+    height: 100%;
+    transform: translateY(0);
+    
+  }
 }

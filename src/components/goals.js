@@ -18,7 +18,7 @@ const Goal = () => {
   const body = data.contentfulGoals.main.main
 
   return (
-    <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(body) }} />
+    <div className='goals-text' dangerouslySetInnerHTML={{ __html: converter.makeHtml(body) }} />
   )
 }
 

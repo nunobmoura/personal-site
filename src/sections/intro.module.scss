@@ -1,7 +1,5 @@
 .intro-container {
   min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .description-container {
@@ -12,4 +10,18 @@
 
 .btns-container {
   padding-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .description-container {
+    padding-top: 20vh;
+  }
+  .btns-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    & > * {
+      flex-grow: 1;
+    }
+  }
 }

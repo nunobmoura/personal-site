@@ -1,22 +1,32 @@
 @import "../styles/variables";
 
 .carreer-container {
-  background: $neutral-bg;
+  background: $neutral900;
   padding: 7.5rem 0;
   // div > div {
   //   padding-bottom: 10rem;
   // }
   h2 {
-    color: $accent-dark;
+    color: $primary800;
   }
   ol {
     list-style: none;
     margin-bottom: 7.5rem;
   }
   h3, p {
-    color: white;
+    color: $neutral0;
   }
   a {
-    color: $accent-links;
+    color: $primary300;
+    &:hover {
+      color: $primary200;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .carreer-container {
+    min-height: calc(100vh - (7.5rem * 2));
   }
 }

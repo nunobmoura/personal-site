@@ -9,24 +9,22 @@ import * as introStyles from './intro.module.scss'
 
 
 const Intro = () => (
-  <section className={introStyles.introContainer}>
+  <section className={`${introStyles.introContainer} grid-container intro-container`}>
     <Image />
-    <div className="grid-container">
-      <div className={introStyles.descriptionContainer}>
-        <Header />
-        <Description />
-        <div className={introStyles.btnsContainer}>
-          <Button
-            label="Google"
-            href='https://google.com'
-            class='btnPrimary'
-          />
-          <Button
-            label="Google"
-            href='https://google.com'
-            class='btnPrimary'
-          />
-        </div>
+    <div className={`${introStyles.descriptionContainer} description`}>
+      <Header />
+      <Description />
+      <div className={introStyles.btnsContainer}>
+        <Button
+          label="LinkedIn"
+          href='https://google.com'
+          class='btnPrimary'
+        />
+        <Button
+          label="GitHub"
+          href='https://google.com'
+          class='btnPrimary'
+        />
       </div>
     </div>
   </section>

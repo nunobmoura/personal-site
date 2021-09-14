@@ -16,7 +16,7 @@ const Image = () => {
   `)
 
   return (
-    <div className={imageStyles.container}>
+    <div className={`${imageStyles.container} image-header`}>
       <img src={data.contentfulAsset.file.url} alt={data.contentfulAsset.description} className={imageStyles.image} />
     </div>
   )

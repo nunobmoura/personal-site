@@ -9,7 +9,7 @@ h5,
 p,
 a {
   font-family: 'Open Sans', sans-serif;
-  color: $neutral-dark;
+  color: $neutral800;
 }
 
 h1 {
@@ -35,15 +35,18 @@ h4 {
   line-height: 2.125rem;
   font-weight: 700;
   strong {
-    color: $accent-light;
+    color: $primary900;
   }
 }
 
 a {
-  color: $accent-light;
+  color: $primary900;
   border-radius: 8px;
-  // display: inline-block;
-  // padding: 0 .25rem .25rem;
+  padding: 0 .25rem .25rem;
+  transition: .2s ease-in-out;
+  &:hover {
+    color: $primary700;
+  }
 }
 
 p {

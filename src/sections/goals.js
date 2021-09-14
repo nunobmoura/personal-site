@@ -15,8 +15,8 @@ const Goals = () => {
   }
 `)
   return (
-    <section className={goalsStyles.goalsContainer}>
-      <div className="grid-container">
+    <section className={`${goalsStyles.goalsContainer} grid-container goals-container`}>
+      <div>
         <Goal />
         <Button
           label="Resumé"

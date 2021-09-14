@@ -15,10 +15,8 @@ const Footer = () => {
   `)
 
   return (
-    <footer className={footerStyle.container}>
-    <div className="grid-container">
+    <footer className={`${footerStyle.container} grid-container footer-container`}>
       <p>Designed and coded with <span>&#128153;</span> by {data.site.siteMetadata.title}</p>
-      </div>
     </footer>
   )
 }
