@@ -10,7 +10,9 @@ import '../styles/index.scss'
 
 const IndexPage = () => (
   <div className="body-container">
-    <Helmet title="Nuno" />
+    <Helmet title="Nuno">
+      <html lang="en" />
+    </Helmet>
     <Intro />
     <main>
       <Carreer />

@@ -17,12 +17,14 @@ const Intro = () => (
       <div className={introStyles.btnsContainer}>
         <Button
           label="LinkedIn"
-          href='https://google.com'
+          title="LinkedIn profile"
+          href='https://www.linkedin.com/in/nunobmoura/'
           class='btnPrimary'
         />
         <Button
           label="GitHub"
-          href='https://google.com'
+          title="GitHub profile"
+          href='https://github.com/nunobmoura'
           class='btnPrimary'
         />
       </div>

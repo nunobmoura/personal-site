@@ -8,7 +8,7 @@ const Button = (props) => {
       <a
         className={props.class}
         href={props.href}
-        title={`Link to Nuno Moura's ${props.label}`}
+        title={`Link to Nuno Moura's ${props.title}`}
         target="_blank" rel="noreferrer"
       >
         {props.label}

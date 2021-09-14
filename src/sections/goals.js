@@ -19,7 +19,8 @@ const Goals = () => {
       <div>
         <Goal />
         <Button
-          label="Resumé"
+          label="View resumé"
+          title="resumé"
           href={data.file.publicURL}
           class='btnSecondary'
         />
