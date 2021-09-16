@@ -33,6 +33,19 @@ module.exports = {
           include: /assets/
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `AAA`,
+        short_name: `BBB`,
+        description: `This is my website`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#5565E9`,
+        display: `standalone`,
+        icon: `src/assets/icon.svg`
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
