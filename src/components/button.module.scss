@@ -1,36 +1,69 @@
 @import "../styles/variables";
 
 .button a {
-  // align-items: center;
-  // border: none;
-  // border-radius: .5em;
+  align-items: center;
   display: flex;
-  // flex: 1 1 0px;
-  padding: .5em 0;
+  padding: 0.5em 0;
   justify-content: center;
-  // width: 100%;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   text-decoration: none;
-  // font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 600;
-  transition: .2s ease-in-out;
+  gap: 0.75rem;
+  span {
+    display: flex;
+    align-items: center;
+  }
 }
 
 :global(.btnPrimary) {
-  background: $primary900;
-  color: $neutral0;
-  &:hover {
-    background: $primary800;
-    color: $neutral0;
+  border: 2px solid $primary800;
+  color: $primary800;
+  svg path {
+    stroke: $primary800;
   }
 }
 
 :global(.btnSecondary) {
-  background: $neutral100;
-  color: $neutral800;
-  &:hover {
-    background: $neutral200;
-    color: $neutral800;
+  border: 2px solid $neutral600;
+  color: $neutral700;
+  svg path {
+    stroke: $neutral700;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .button a {
+    gap: 0;
+    transition: 0.2s ease-in-out;
+    span {
+      width: 0;
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+    }
+    &:hover {
+      gap: 8px;
+      & span {
+        width: 16px;
+        opacity: 1;
+      }
+    }
+  }
+
+  :global(.btnPrimary):hover {
+    border: 2px solid $primary900;
+    color: $primary900;
+    background: $primary100;
+    & svg path {
+      stroke: $primary900;
+    }
+  }
+
+  :global(.btnSecondary):hover {
+    color: $neutral700;
+    background: $neutral100;
+    & svg path {
+      stroke: $neutral700;
+    }
   }
 }

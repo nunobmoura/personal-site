@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Icon from '../assets/link.svg'
+
 import * as btnStyles from './button.module.scss'
 
 const Button = (props) => {
@@ -12,6 +14,9 @@ const Button = (props) => {
         target="_blank" rel="noreferrer"
       >
         {props.label}
+        <span>
+          <Icon />
+        </span>
       </a>
     </div>
   )

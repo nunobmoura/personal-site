@@ -25,7 +25,7 @@
     }
     &.carreer-container {
       & :first-child {
-        grid-column: 3 / 7;
+        grid-column: 2 / 6;
         grid-row: 1;
       }
       & :last-child {
@@ -34,7 +34,7 @@
       }
     }
     &.goals-container div {
-      grid-column: 3 / 7;
+      grid-column: 3 / 9;
     }
     &.footer-container p {
       grid-column: 2 / 12;

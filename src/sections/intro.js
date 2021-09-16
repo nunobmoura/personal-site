@@ -16,13 +16,13 @@ const Intro = () => (
       <Description />
       <div className={introStyles.btnsContainer}>
         <Button
-          label="LinkedIn"
+          label="View LinkedIn"
           title="LinkedIn profile"
           href='https://www.linkedin.com/in/nunobmoura/'
           class='btnPrimary'
         />
         <Button
-          label="GitHub"
+          label="View GitHub"
           title="GitHub profile"
           href='https://github.com/nunobmoura'
           class='btnPrimary'

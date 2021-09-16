@@ -33,7 +33,7 @@ const Education = () => {
           <li key={edge.node.courseName.replace(/\s/g, '')}>
             <h3>{edge.node.startDate ? `${edge.node.startDate} - ${edge.node.finishDate}` : `Ongoing`}</h3>
             <p>
-              {edge.node.link ? <a href={edge.node.link} target="_blank" rel="noreferrer">{edge.node.courseName}</a> : edge.node.courseName}
+              {edge.node.link ? <a href={edge.node.link} title={`Link to ${edge.node.courseName}`} target="_blank" rel="noreferrer">{edge.node.courseName}</a> : edge.node.courseName}
               {edge.node.courseDetails && ` - ${edge.node.courseDetails}`}
             </p>
             <p>{edge.node.location}</p>
