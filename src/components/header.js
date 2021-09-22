@@ -6,7 +6,7 @@ const Header = () => {
     query {
       site {
         siteMetadata {
-          title
+          author
         }
       }
     }
@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <h1>{data.site.siteMetadata.title}</h1>
+      <h1>{data.site.siteMetadata.author}</h1>
     </header>
   )
 }
