@@ -1,25 +1,18 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 
 import * as imageStyles from './image.module.scss'
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-  query {
-    contentfulAsset(title: { eq: "header" } ) {
-      description
-      file {
-        url
-      }
-    }
-  }
-  `)
-
-  return (
+const Image = () => (
     <div className={`${imageStyles.container} image-header`}>
-      <img src={data.contentfulAsset.file.url} alt={data.contentfulAsset.description} className={imageStyles.image} />
+      <StaticImage
+        src="../static/hero.png"
+        alt="Nuno on a whiteboard session"
+        placeholder="blurred"
+        loading="eager"
+        className={imageStyles.image}
+      />
     </div>
-  )
-}
+)
 
 export default Image
