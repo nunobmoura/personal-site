@@ -8,7 +8,7 @@ const Footer = () => {
     query {
       site {
         siteMetadata {
-          title
+          author
         }
       }
     }
@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className={`${footerStyle.container} grid-container footer-container`}>
-      <p>Designed and coded with <span>&#128153;</span> by {data.site.siteMetadata.title}</p>
+      <p>Designed and coded with <span>&#128153;</span> by {data.site.siteMetadata.author}</p>
     </footer>
   )
 }
