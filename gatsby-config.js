@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nuno Moura',
-    description: 'My personal website',
+    title: 'Resume',
+    description: "Nuno Moura's website. You can check all the information or send a message through LinkedIn or at nunobaratamoura@gmail.com.",
     author: 'Nuno Moura',
     siteUrl: `https://nunobmoura.com`,
   },
