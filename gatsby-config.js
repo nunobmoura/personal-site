@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-gatsby-cloud`,
     'gatsby-plugin-sass',
+    `gatsby-plugin-minify`,
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -46,7 +47,12 @@ module.exports = {
         icon: `src/assets/icon.svg`
       }
     },
-    `gatsby-plugin-minify`
+    {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: process.env.FULLSTORY_ORG_ID,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
