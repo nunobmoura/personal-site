@@ -41,8 +41,8 @@ h4 {
   line-height: 2rem;
   font-weight: 400;
   strong {
-    color: $primary800;
-    font-weight: 400;
+    color: $primary700;
+    font-weight: 600;
   }
 }
 
@@ -51,6 +51,7 @@ a {
   border-radius: 8px;
   padding: 0 .25rem .25rem;
   transition: .2s ease-in-out;
+  text-decoration-thickness: .125rem;
   &:hover {
     color: $primary600;
   }

@@ -7,9 +7,10 @@
   p {
     margin-bottom: 1.5rem;
   }
-  a {
-    margin-top: 3.75rem;
-  }
+}
+
+.btns-container {
+  margin-top: 3.75rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -20,9 +21,16 @@
     p {
       max-width: 36rem;
     }
-    a {
-      width: 50%;
-      max-width: 20rem;
+  }
+
+  .btns-container {
+    max-width: 36rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    & > * {
+      flex-grow: 1;
+      max-width: calc(50% - 1rem);
     }
   }
 }
