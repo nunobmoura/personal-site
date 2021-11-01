@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Resume',
+    title: 'Resumé',
     description: "Nuno Moura's website. You can check all the information or send a message through LinkedIn or at nunobaratamoura@gmail.com.",
     author: 'Nuno Moura',
     siteUrl: `https://nunobmoura.com`,
@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AAA`,
-        description: `This is my website`,
+        name: `Nuno Moura`,
+        description: `Nuno Moura's digital resumé.`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#5565E9`,
