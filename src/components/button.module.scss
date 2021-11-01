@@ -41,7 +41,7 @@
       opacity: 0;
       transition: 0.2s ease-in-out;
     }
-    &:hover {
+    &:hover, &:focus {
       gap: 8px;
       & span {
         width: 16px;
