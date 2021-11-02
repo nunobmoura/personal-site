@@ -33,5 +33,3 @@ const Intro = () => (
 )
 
 export default Intro
-
-// introStyles.descriptionContainer2 => "grid-container"

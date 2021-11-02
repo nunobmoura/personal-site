@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Resumé',
+    title: 'Resume',
     description: "Nuno Moura's website. You can check all the information or send a message through LinkedIn or at nunobaratamoura@gmail.com.",
     author: 'Nuno Moura',
     siteUrl: `https://nunobmoura.com`,
@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Nuno Moura`,
-        description: `Nuno Moura's digital resumé.`,
+        description: `Nuno Moura's digital resume.`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#5565E9`,
@@ -53,8 +53,5 @@ module.exports = {
         fs_org: process.env.FULLSTORY_ORG_ID,
       },
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }
