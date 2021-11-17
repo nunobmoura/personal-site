@@ -5,6 +5,7 @@ import Intro from '../sections/intro'
 import Carreer from '../sections/carreer'
 import Goals from '../sections/goals'
 import Footer from '../components/footer'
+import Ninja from '../components/ninja'
 
 import '../styles/index.scss'
 
@@ -17,7 +18,7 @@ const IndexPage = () => (
       <Goals />
     </main>
     <Footer />
-    <h2 className="screen-size" aria-hidden="true"> 🥷 </h2>
+    <Ninja />
   </div>
 )
 

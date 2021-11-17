@@ -1,0 +1,14 @@
+.body-container .screen-size {
+  display: none;
+}
+
+@media screen and (max-width: 280px) {
+  .body-container > * {
+    display: none;
+  }
+  .body-container .screen-size {
+    display: block;
+    text-align: center;
+    padding-top: 45vh;
+  }
+}
