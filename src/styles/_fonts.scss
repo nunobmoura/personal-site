@@ -42,12 +42,11 @@ h4 {
   line-height: 2rem;
   font-weight: 400;
   strong {
-    font-weight: 400;
-    color: $neutral900;
+    font-weight: 600;
     text-decoration: underline;
-    text-decoration-thickness: .9rem;
+    text-decoration-thickness: .5rem;
     text-decoration-color: $primary200;
-    text-underline-offset: -1rem;
+    text-underline-offset: -.45rem;
     text-decoration-skip-ink: none;
   }
 }
