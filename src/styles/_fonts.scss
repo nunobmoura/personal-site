@@ -34,6 +34,7 @@ h4 {
   font-size: 2rem;
   line-height: 2.75rem;
   font-weight: 700;
+  color: $primary700
 }
 
 .goals-text p {
@@ -43,7 +44,6 @@ h4 {
   strong {
     font-weight: 400;
     color: $neutral900;
-
     text-decoration: underline;
     text-decoration-thickness: .9rem;
     text-decoration-color: $primary200;
@@ -52,18 +52,11 @@ h4 {
   }
 }
 
-.goals-text h4 {
-  color: $primary700
-}
-
 a {
   color: $primary800;
   border-radius: 8px;
   transition: .2s ease-in-out;
   text-decoration-thickness: .125rem;
-  &:hover {
-    color: $primary600;
-  }
 }
 
 p {

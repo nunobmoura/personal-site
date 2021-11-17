@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 .goals-container {
   min-height: calc(100vh - 3.5rem);
   h4 {
@@ -5,6 +7,7 @@
     margin-bottom: 0.5rem;
   }
   p {
+    color: $neutral900;
     margin-bottom: 1.5rem;
   }
 }
