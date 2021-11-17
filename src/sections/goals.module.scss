@@ -16,16 +16,10 @@
   margin-top: 3.75rem;
 }
 
-@media screen and (min-width: 1000px) {
-  .goals-container {
-    h4 {
-      margin-top: 13rem;
-    }
-    p {
+@media screen and (min-width: 600px) {
+  .goals-container p {
       max-width: 36rem;
-    }
   }
-
   .btns-container {
     max-width: 36rem;
     display: flex;
@@ -34,6 +28,14 @@
     & > * {
       flex-grow: 1;
       max-width: calc(50% - 1rem);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .goals-container {
+    h4 {
+      margin-top: 13rem;
     }
   }
 }

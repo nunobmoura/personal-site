@@ -12,16 +12,34 @@
   padding-bottom: 3.5rem;
 }
 
-@media screen and (min-width: 1000px) {
-  .description-container {
-    padding-top: 20vh;
-  }
+@media screen and (min-width: 600px) {
   .btns-container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     & > * {
       flex-grow: 1;
+      max-width: calc(50% - 1rem);
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .description-container {
+    padding-top: 20vh;
+  }
+  .btns-container {
+    display: block;
+    & > * {
+      max-width: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .btns-container {
+    display: flex;
+    & > * {
       max-width: calc(50% - 1rem);
     }
   }
