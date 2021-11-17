@@ -17,6 +17,7 @@ const IndexPage = () => (
       <Goals />
     </main>
     <Footer />
+    <h2 className="screen-size" aria-hidden="true"> 🥷 </h2>
   </div>
 )
 
