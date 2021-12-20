@@ -3,7 +3,7 @@ module.exports = {
     title: 'Resume',
     description: "Nuno Moura's website. You can check all the information or send a message through LinkedIn or at nunobaratamoura@gmail.com.",
     author: 'Nuno Moura',
-    siteUrl: `https://61c07e1997061a30ad8ccbe8--nifty-elion-00faef.netlify.app/`,
+    siteUrl: `https://nunobmoura.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
