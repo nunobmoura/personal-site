@@ -33,14 +33,14 @@ const Seo = (props) => {
       <title>{props.title || seo.title}</title>
       <meta name="description" content={props.description || seo.description} />
       <meta name="author" content={props.author} />
-
       <meta property="og:title" content={props.title || seo.title} />
       <meta property="og:url" content={seo.siteUrl} />
-      <meta property="og:image" content={seo.image} />
-
+      <meta property="og:image" itemprop="image" content={seo.image} />
+      <meta property="og:description" content={props.description || seo.description} />
+      <meta property="og:type" content="website" />
       <meta name="twitter:title" content={props.title || seo.title} />
       <meta name="twitter:image" content={seo.image} />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
 
     </Helmet>
   )
