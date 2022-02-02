@@ -2,7 +2,6 @@ import React from 'react'
 
 import Image from '../components/image'
 import Header from '../components/header'
-import Description from '../components/description'
 import Button from '../components/button'
 
 import * as introStyles from './intro.module.scss'
@@ -13,7 +12,6 @@ const Intro = () => (
     <Image />
     <div className={`${introStyles.descriptionContainer} description`}>
       <Header />
-      <Description />
       <div className={introStyles.btnsContainer}>
         <Button
           label="View LinkedIn"

@@ -27,7 +27,7 @@ const Experience = () => {
   `)
 
   return (
-    <div className={experienceStyles.container}>
+    <article className={experienceStyles.container}>
       <h2>Experience</h2>
       <ol>
         {data.allContentfulExperience.edges.map((edge) => (
@@ -38,7 +38,7 @@ const Experience = () => {
           </li>
         ))}
       </ol>
-    </div>
+    </article>
   )
 }
 

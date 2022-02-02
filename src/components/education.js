@@ -26,7 +26,7 @@ const Education = () => {
     }
   `)
   return (
-    <div className={educationStyles.container}>
+    <article className={educationStyles.container}>
       <h2>Education</h2>
       <ol>
         {data.allContentfulEducation.edges.map((edge) => (
@@ -40,7 +40,7 @@ const Education = () => {
           </li>
         ))}
       </ol>
-    </div>
+    </article>
   )
 }
 
