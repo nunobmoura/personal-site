@@ -2,7 +2,7 @@
 
 .goals-container {
   min-height: calc(100vh - 3.5rem);
-  h4 {
+  h2 {
     margin-top: 9.5rem;
     margin-bottom: 0.5rem;
   }
@@ -21,20 +21,21 @@
       max-width: 36rem;
   }
   .btns-container {
-    max-width: 36rem;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    & > * {
-      flex-grow: 1;
-      max-width: calc(50% - 1rem);
-    }
+    width: 30rem;
+    // max-width: 36rem;
+    // display: flex;
+    // flex-direction: row;
+    // gap: 2rem;
+    // & > * {
+    //   flex-grow: 1;
+    //   max-width: calc(50% - 1rem);
+    // }
   }
 }
 
 @media screen and (min-width: 1000px) {
   .goals-container {
-    h4 {
+    h2 {
       margin-top: 13rem;
     }
   }

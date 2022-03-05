@@ -24,6 +24,7 @@ h2 {
   font-size: 3rem;
   line-height: 4.75rem;
   font-weight: 700;
+  color: $primary700;
 }
 
 h3 {
@@ -32,24 +33,31 @@ h3 {
   font-weight: 700;
 }
 
+/*---- Unused ----*/
+
 h4 {
   font-size: 2rem;
-  line-height: 2.75rem;
+  line-height: 1.75rem;
   font-weight: 700;
-  color: $primary700
+  color: red;
 }
+
+h5 {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: purple;
+}
+
+/*---- Unused_End ----*/
 
 .goals-text p {
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 400;
   strong {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: .5rem;
-    text-decoration-color: $primary200;
-    text-underline-offset: -.45rem;
-    text-decoration-skip-ink: none;
+    font-weight: 700;
+    color: $neutral800;
   }
 }
 

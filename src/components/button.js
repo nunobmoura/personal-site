@@ -1,17 +1,22 @@
-import React from 'react'
+import React from "react"
 
-import Icon from '../assets/link.svg'
+import Icon from "../assets/link.svg"
 
-import * as btnStyles from './button.module.scss'
+import * as btnStyles from "./button.module.scss"
 
-const Button = (props) => {
+const Button = props => {
   return (
-    <div className={`${btnStyles.button} btn-container`}>
+    <div
+      className={`${btnStyles.button}
+      ${props.small ? `${btnStyles.small}` : ""}
+      btn-container`}
+    >
       <a
-        className={props.class}
+        className={`${props.class} ${props.size}`}
         href={props.href}
-        title={`Link to Nuno Moura's ${props.title}`}
-        target="_blank" rel="noreferrer"
+        title={props.title}
+        target="_blank"
+        rel="noreferrer"
       >
         {props.label}
         <span>

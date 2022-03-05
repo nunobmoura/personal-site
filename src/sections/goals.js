@@ -31,9 +31,9 @@ const Goals = () => {
             return (
               <Button
                 label={label}
-                title={title}
+                title={`Link to Nuno Moura's ${title}`}
                 href={edge.node.publicURL}
-                class='btnSecondary'
+                class='secondary'
               />
             )
           })}
