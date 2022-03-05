@@ -1,0 +1,159 @@
+@import "../../styles/variables";
+
+.container {  
+  padding: 6rem 1.5rem 2rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 125%;
+    font-weight: 700;
+    color: $primary800;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+  }
+  
+  h4 {
+    font-size: 2rem;
+  }
+  
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    margin: 2rem 0;
+    border: none;
+    text-align: center;
+    &::after {
+      content: '· · ·';
+      font-size: 1.75rem;
+      color: $primary800;
+      position: relative;
+      top: 0;
+    }
+  }
+
+  p code,
+  pre {
+    background: $neutral100;
+    padding: .125rem .5rem;
+    border-radius: .25rem;
+    border: 1px solid $neutral400;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+
+  p code {
+    white-space: pre-wrap;
+  }
+
+  pre {
+    padding: .5rem;
+  }
+
+  blockquote {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: .25rem;
+      background: $primary400;
+      border-radius: .25rem;
+    }
+    p {
+      color: $neutral700;
+      margin-left: 2rem;
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 2rem;
+    list-style: none ;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: $primary700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  ol {
+    counter-reset: li;
+    & li {
+      counter-increment: li;
+      &::before {
+    content: counter(li);
+    color: $primary700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: .5rem;
+    text-align: right;
+      }  
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: .25rem;
+    box-shadow: 0px 2px 10px rgba(74, 81, 98, 0.03), 0px 10px 18px rgba(74, 81, 98, 0.09);
+  }
+
+  figcaption {
+    text-align: center;
+    margin-top: .75rem;
+    color: $neutral700;
+    font-style: italic;
+    font-size: .75rem;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+ .container {
+  width: 75vw;
+  max-width: 55rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+
+  pre {
+    margin: 0 2rem;
+  }
+
+ } 
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+   width: 55vw;
+  } 
+ }
+
+ @media screen and (min-width: 1200px) {
+  .container {
+   width: 45vw;
+  } 
+ }
