@@ -15,15 +15,15 @@ const Intro = () => (
       <div className={introStyles.btnsContainer}>
         <Button
           label="View LinkedIn"
-          title="LinkedIn profile"
+          title="Link to Nuno Moura's LinkedIn profile"
           href='https://www.linkedin.com/in/nunobmoura/'
-          class='btnPrimary'
+          class='primary'
         />
         <Button
           label="View GitHub"
-          title="GitHub profile"
+          title="Link to Nuno Moura's GitHub profile"
           href='https://github.com/nunobmoura'
-          class='btnPrimary'
+          class='primary'
         />
       </div>
     </div>

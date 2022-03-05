@@ -20,7 +20,7 @@
   }
 }
 
-:global(.btnPrimary) {
+:global(.primary) {
   border: 2px solid $primary800;
   color: $primary800;
   svg path {
@@ -28,11 +28,19 @@
   }
 }
 
-:global(.btnSecondary) {
+:global(.secondary) {
   border: 2px solid $neutral600;
   color: $neutral700;
   svg path {
     fill: $neutral700;
+  }
+}
+
+:global(.terciary) {
+  border: none;
+  color: $primary800;
+  svg path {
+    fill: $primary800;
   }
 }
 
@@ -54,7 +62,21 @@
     }
   }
 
-  :global(.btnPrimary):hover {
+  .small {
+    display: inline-block;
+    a {
+      display: flex;
+      padding: .5rem;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      span {
+        display: none;
+      }
+    }
+  }
+
+  :global(.primary):hover {
     border: 2px solid $primary900;
     color: $primary900;
     background: $primary100;
@@ -63,11 +85,20 @@
     }
   }
 
-  :global(.btnSecondary):hover {
+  :global(.secondary):hover {
     color: $neutral700;
     background: $neutral100;
     & svg path {
       fill: $neutral700;
+    }
+  }
+
+  :global(.terciary):hover {
+    border: none;
+    color: $primary900;
+    background: $primary100;
+    & svg path {
+      fill: $primary900;
     }
   }
 }
