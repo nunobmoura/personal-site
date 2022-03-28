@@ -6,10 +6,12 @@ const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       contentfulIntro {
-        jobTitle
-        company
-        companyLink
         description 
+      }
+      contentfulExperience {
+        company
+        position
+        link
       }
       site {
         siteMetadata {
@@ -23,15 +25,15 @@ const Header = () => {
     <header className={headerStyle.container}>
       <h1>{data.site.siteMetadata.author}</h1>
       <p className="bold">
-        {data.contentfulIntro.jobTitle}{" "}
+        {data.contentfulExperience.position}{" "}
         <span className="nowrap">
           @{" "}
           <a
-            href={data.contentfulIntro.companyLink}
+            href={data.contentfulExperience.link}
             target="_blank"
             rel="noreferrer"
           >
-            {data.contentfulIntro.company}
+            {data.contentfulExperience.company}
           </a>
         </span>
       </p>
