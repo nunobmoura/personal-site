@@ -14,8 +14,10 @@ const Experience = () => {
       ) {
         edges {
           node {
-            startDate (formatString:"MMM YYYY")
-            finishDate (formatString:"MMM YYYY")
+            tagStartDate: startDate (formatString:"YYYY-MM")
+            textStartDate: startDate (formatString:"MMM YYYY")
+            tagFinishDate: finishDate (formatString:"YYYY-MM")
+            textFinishDate: finishDate (formatString:"MMM YYYY")
             position
             company
             link
@@ -32,7 +34,7 @@ const Experience = () => {
       <ol>
         {data.allContentfulExperience.edges.map((edge) => (
           <li key={edge.node.company.replace(/\s/g, '')}>
-            <h3>{edge.node.startDate}{edge.node.finishDate ? ` - ${edge.node.finishDate}` : ` - present`}</h3>
+            <h3><time datetime={edge.node.tagStartDate}>{edge.node.textStartDate}</time>{edge.node.tagFinishDate ? <span> - <time datetime={edge.node.tagFinishDate}>{edge.node.textFinishDate}</time></span> : ` - present`}</h3>
             <p>{edge.node.position} - {edge.node.link ? <a href={edge.node.link} title={`Link to ${edge.node.company}`} target="_blank" rel="noreferrer">{edge.node.company}</a> : edge.node.company}</p>
             <p>{edge.node.location}</p>
           </li>
