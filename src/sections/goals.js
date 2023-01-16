@@ -9,10 +9,12 @@ import * as goalsStyles from './goals.module.scss'
 const Goals = () => {
   const data = useStaticQuery(graphql`
   query {
-    allFile(filter: { extension: { eq: "pdf" } }) {
+    allFile(filter: {
+      name: {regex: "/cv/"},
+      extension: {eq: "pdf"}
+    }) {
       edges {
         node {
-          name
           publicURL
         }
       }
@@ -25,13 +27,10 @@ const Goals = () => {
         <Goal />
         <div className={goalsStyles.btnsContainer} >
           {data.allFile.edges.map((edge) => {
-            var name = edge.node.name
-            var label = name.replace(/^[^-]*-/, 'View ')
-            var title = name.replace(/^[^-]*-/, '')
             return (
               <Button
-                label={label}
-                title={`Link to Nuno Moura's ${title}`}
+                label="View curriculum"
+                title="Link to Nuno Moura's curriculum"
                 href={edge.node.publicURL}
                 class='secondary'
               />
